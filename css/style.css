@@ -3,7 +3,7 @@ font-size: 14px;
 line-height: 26px;
 color: #333333;
 font-weight: normal;
-font-family: PTSans;
+font-family: 'PTSans' , serif;
 }
 
 .h1{
@@ -11,7 +11,7 @@ font-size: 21px;
 line-height: 26px;
 color: #000000;
 font-weight: bold;
-font-family: PTSans;
+font-family: 'PTSans' , serif;
 }
 
 .h3{
@@ -19,5 +19,12 @@ font-family: PTSans;
 line-height: 26px;
 color: #000000;
 font-weight: bold;
-font-family: PTSans;
+font-family: 'PTSans', serif;
+}
+.h2{
+ font-size: 21px;
+line-height: 26px;
+color: #000000;
+font-weight: bold;
+font-family: 'PTSans', serif;
 }
