@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -11,7 +12,7 @@
       <header class="page-header">
         <nav class="main-nav">
           <a class="logo" href="index.html">
-          <img src="http://placehold.it/150x100" width="67" height="56" alt="sity_of_sedona">
+          <img src="img/logo.png" width="138" height="70" alt="logo">
           </a>
           <ul class="site-nav-list">
             <li>Информация</li>
@@ -22,7 +23,6 @@
         </nav>
       </header>
       <main>
-        <h1 class="visually-hidden">Гостиницы Седоны</h1>
         <form class="hotel-filter" method="get" action="http://echo.htmlacademy.ru/">
           <fieldset class="hotel-filter-group">
             <legend class="hotel-filter-title">Инфраструктура</legend>
@@ -55,7 +55,7 @@
             </label>
           </fieldset>
           <fieldset class="filter-cost">
-            <legend>Стоимость в сутки (Р)</legend>
+            <legend class="price-filter-title">Стоимость в сутки (Р)</legend>
             <div class="selection-price">
               <div class="selection-group">
                 <label>От
@@ -77,7 +77,7 @@
           <h3 class="found-title">Найдено:3</h3>
           <span class="found-caption">Сортировка:</span>
           <div class="hotel-labels">
-            <a class="hotel-labels-link" href="#">По цене</a>
+            <a class="hotel-labels-link current" href="#">По цене</a>
             <a class="hotel-labels-link" href="#">По типу</a>
             <a class="hotel-labels-link" href="#">По рейтингу</a>
           </div>
@@ -92,7 +92,7 @@
             <img src="img/hotel-img1.jpg" width="135" height="90" alt="amara_resort&amp;spa">
             </a>
             <div class="result-item-action">
-              <a href="#">Amara resort &amp; spa</a>
+              <a class="result-item-name" href="#">Amara resort &amp; spa</a>
               <div class="result-item-part">
                 <p>Гостиница</p>
                 <a class="result-item-btn" href="#">Подробнее</a>

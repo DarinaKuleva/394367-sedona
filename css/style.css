@@ -1,14 +1,394 @@
 
 body{
-font-size: 14px;
-line-height: 26px;
-color: #333333;
-font-weight: bold;
-font-family: 'Pt Sans', 'arial', sans-serif;
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  font-weight: bold;
+  font-family: 'Pt Sans', 'arial', sans-serif;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
 }
 
-h1, h2, h3{
-line-height: 1.2;
-font-size: 26px ;
+a {
+  text-decoration: none;
 }
+
+.main-navigation-list {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.promo {
+  /* нужно ли здесь сделать что-то вместо
+  картинки на случай того, если она не загрузится? */
+  height: 773px;
+
+  background-image: url("img/index-fon.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 1200px 773px;
+}
+
+.intro {
+  text-align: center;
+}
+
+.main-title {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.features-item {
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.features-item-light {
+  text-align: center;
+
+  background-color: #ffffff;
+
+}
+
+.features-item-dark {
+  text-align: center;
+
+  background-color: #eeeeee;
+
+}
+
+.features-item h2{
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.features-item-light h2,
+.features-item-dark h2 {
+ color: #000000;
+}
+
+.features-item-light p,
+.features-item-dark p {
+ color: #333333;
+}
+
+.features-num-dark{
+  color: #333333;
+}
+
+.offer {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.offer-title {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.offer p {
+  line-height: 24px;
+}
+
+.search-form {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.offer-btn {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+
+  background-color: #776358;
+}
+
+.offer-btn:hover {
+  background-color: #604e44;
+}
+
+.offer-btn:focus {
+  color: #8e857e;
+
+  background-color: #503e34;
+}
+
+.appointment-item input[type="text"] {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.appointment-item input:hover {
+  background-color: #ebebeb;
+}
+
+.appointment-item input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.search-form-btn {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+
+  background-color: #82b3d3;
+  border: none;
+}
+
+.search-form-btn:hover {
+  background-color: #669ec1;
+}
+
+.search-form-btn:focus {
+  color: #98bcd2;
+
+  background-color: #5596be;
+}
+
+.search-form button {
+  color: #333333;
+}
+
+.search-form button:hover {
+  color: #000000;
+}
+
+.search-form button:focus {
+  color: #7db9d3;
+}
+
+.hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.social a{
+  color: #82b3d3;
+}
+
+.social a:hover {
+  color: #669ec1;
+}
+
+.socia a:focus {
+  color: #5596be;
+}
+
+.copyright,
+.copyright a{
+  color: #000000;
+}
+
+.copyright a:hover {
+  color: #89bbd6;
+}
+
+.copyright a:focus {
+  color: #bcbcbc;
+}
+
+.hotel-filter {
+  /* нужно ли здесь сделать что-то вместо
+  картинки на случай того, если она не загрузится? */
+  width: 1200px;
+
+  background-image: url("img/catalog-fon.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.visually-hidden,
+.visually-hidden:hover,
+.visually-hidden:focus {
+  background-color: #ffffff;
+}
+
+.visually-hidden:disabled {
+  background-color: #6c6867;
+}
+
+
+.filter-cost button{
+  color: #ffffff;
+  background: transparent;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.filter-cost button:hover{
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.page-header li:hover {
+  color: #81adc8;
+}
+
+.page-header li:focus {
+  color: #c9c9c9;
+}
+
+.site-nav-list .current {
+  color: #796765;
+}
+
+.hotel-labels a {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #333333;
+}
+
+.hotel-labels a:hover {
+  color: #82b1c3;
+}
+
+.hotel-labels a:focus {
+  color: #000000;
+}
+
+.hotel-labels .current {
+  color: #a8bfcf;
+}
+
+.found-arrows a {
+  color: #333333;
+}
+
+.found-arrows a:hover {
+  color: #000000;
+}
+
+.found-arrows a:focus {
+  color: #82b1c3;
+}
+
+.found-arrows .arrow-down {
+  color: #a8bfcf;
+}
+
+.found span {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.found h3 {
+  font-size: 21px;
+  color: #ffffff;
+}
+
+.hotel-filter-title,
+.price-filter-title {
+  font-size: 16px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.hotel-filter-item,
+.selection-group,
+.selection-input {
+  font-size: 14px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.selection-input {
+  color: #ffffff;
+  background: transparent;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.selection-input:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.result-item-action a {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.result-item-action a:hover {
+  color: #7fadce;
+}
+
+.result-item-action a:focus {
+  color: #cbcbcb;
+}
+
+.result-item-action p {
+ font-weight: normal;
+}
+
+.result-item-action .result-item-btn {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+
+  background-color: #82b3d3;
+}
+
+.result-item-action .result-item-btn:hover {
+  color: #ffffff;
+  background-color: #669ec1 ;
+}
+
+.result-item-action .result-item-btn:focus {
+  color: #8cafc5;
+  background-color: #5596be ;
+}
+
+.result-item-action .btn-dark {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+
+  background-color: #766458;
+}
+
+.result-item-action .btn-dark:hover {
+  color: #ffffff;
+  background-color: #635145 ;
+}
+
+.result-item-action .btn-dark:focus {
+  color: #938b88;
+  background-color: #503e34 ;
+}
+
+
+
+
+
+
+
+
+
+
 
