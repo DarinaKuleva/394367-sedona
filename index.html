@@ -2,32 +2,33 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+  <div class="page-wrapper">
     <header class="page-header">
       <nav class="main-navigation-list">
-        <a class="logo">
-        <img src="img/logo.png" width="138" height="70" alt="logo">
+        <a class="logo-Sedona">
+        <img src="img/logo.png" width="138" height="70" alt="логотип Седона">
         </a>
-        <ul class="site-navigation">
-          <li>Информация</li>
-          <li>Фото и видео</li>
-          <li>Карта штата</li>
-          <li>Гостиницы</li>
+        <ul class="site-nav-list">
+          <li><a class="paragraph" href="#">Информация</a></li>
+          <li><a class="paragraph" href="#">Фото и видео</a></li>
+          <li><a class="paragraph" href="#">Карта штата</a></li>
+          <li><a class="paragraph" href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="promo">
-        <img src="img/promo.png" width="458" height="352" alt="promo">
+        <img src="img/promo.png" width="458" height="352" alt="Добро пожаловать в Седону">
       </section>
       <section class="intro">
         <h1 class="main-title">
-          Седона-небольшой городок в аризоне,<br>
+          Седона-небольшой городок в аризоне,
           заслуживающий большего!
         </h1>
         <p>
@@ -41,7 +42,7 @@
           <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
         </article>
         <div class="features-image">
-          <img src="img/feature-city.jpg" width="512" height="256" alt="true_town">
+          <img src="img/feature-city.jpg" width="512" height="256" alt="Настоящий городок">
         </div>
         <article class="features-item features-item-light">
           <h2 class="features-title feature-title-house">Жилье</h2>
@@ -56,24 +57,24 @@
           <p>Не только китайского, но и местного производства!</p>
         </article>
         <div class="features-image">
-          <img src="img/feature-bridge.jpg" width="512" height="256" alt="devil's_bridge">
+          <img src="img/feature-bridge.jpg" width="512" height="256" alt="Мост дьявола">
         </div>
         <article class="features-item">
-          <h2 class="features-title">Там есть мост дьявола</h2>
+          <h2 class="features-title">Там есть <br> мост дьявола</h2>
           <span class="features-num">&mdash;№2&mdash;</span>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </article>
         <article class="features-item features-item-dark">
           <h2 class="features-title">Небольшая площадь</h2>
-          <span class="features-num features-num-dark">&mdash;№3&mdash;</span>
+          <span class="features-num">&mdash;№3&mdash;</span>
           <p>Все достопримечательности находятся очень близко</p>
         </article>
-        <article class="features-item features-item-dark">
+        <article class="features-item">
           <h2 class="features-title">Красивая дорога</h2>
           <span class="features-num features-num-dark">&mdash;№4&mdash;</span>
           <p>Ехать в седону из лас-вегаса совсем не скучно! </p>
         </article>
-        <article class="features-item features-item-dark">
+        <article class="features-item">
           <h2 class="features-title">Мало туристов</h2>
           <span class="features-num features-num-dark">&mdash;№5&mdash;</span>
           <p>Большинство едет в гранд каньон и толпится там</p>
@@ -124,8 +125,6 @@
     </main>
     <footer class="main-footer">
       <div class="map">
-      <img src="img/map.jpg" width="768" height="593">
-        <!-- не поняла как сделать форму модальную поиска !-->
       </div>
       <section class="footer-wrapper">
         <div class="hashtag">
@@ -138,12 +137,12 @@
         </div>
         <p class="copyright">
           <span>Website by</span>
-          <a href="#">
-          <img src="html_academy.svg" width="50" height="20" alt="html_academy">
-          Htmlacademy
+          <a href="#" class="copyright-hrml">
+          <img src="html_academy.svg" width="50" height="20" alt="html academy">
           </a>
         </p>
       </section>
     </footer>
+    </div>
   </body>
 </html>

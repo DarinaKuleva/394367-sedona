@@ -2,15 +2,17 @@
 body{
   margin: 0;
   padding: 0;
-
   font-size: 14px;
   line-height: 21px;
   color: #333333;
-  font-weight: bold;
+  font-weight: normal;
   font-family: 'Pt Sans', 'arial', sans-serif;
   text-transform: uppercase;
-
   background-color: #f2f2f2;
+}
+
+.page-header {
+  background-color: #fff;
 }
 
 a {
@@ -21,23 +23,26 @@ a {
   font-size: 14px;
   line-height: 26px;
   color: #000000;
-
   background-color: #ffffff;
 }
 
-.site-navigation {
+.site-nav-list {
   list-style: none;
+  font-weight: bold;
+
+}
+
+.paragraph {
+  color: #000;
 }
 
 .promo {
-  /* нужно ли здесь сделать что-то вместо
-  картинки на случай того, если она не загрузится? */
   height: 773px;
-
-  background-image: url("img/index-fon.jpg");
+  background-image: url("../img/index-bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 1200px 773px;
+  background-size: 100% 773px;
+  background-color: #325572;
 }
 
 .intro {
@@ -50,34 +55,37 @@ a {
   color: #000000;
 }
 
+.page-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px 0 #000101 ;
+}
+
 .features-item {
   text-align: center;
   color: #ffffff;
-
   background-color: #81b3d2;
 }
 
 .features-item-light {
   text-align: center;
-
   background-color: #ffffff;
 
 }
 
 .features-item-dark {
   text-align: center;
-
   background-color: #eeeeee;
 
 }
 
-.features-item h2{
+.features-item .feature-title{
   font-size: 21px;
-  line-height: 21px;
+  line-height: 1.2;
 }
 
-.features-item-light h2,
-.features-item-dark h2 {
+.features-item-light .features-title,
+.features-item-dark .features-title {
  color: #000000;
 }
 
@@ -86,7 +94,7 @@ a {
  color: #333333;
 }
 
-.features-num-dark{
+.features-item-dark .features-num{
   color: #333333;
 }
 
@@ -115,7 +123,6 @@ a {
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
-
   background-color: #776358;
 }
 
@@ -125,12 +132,10 @@ a {
 
 .offer-btn:focus {
   color: #8e857e;
-
   background-color: #503e34;
 }
 
 .appointment-item input[type="text"] {
-  font: inherit;
   color: #000000;
   text-transform: uppercase;
   border: none;
@@ -150,7 +155,6 @@ a {
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
-
   background-color: #82b3d3;
   border: none;
 }
@@ -161,20 +165,27 @@ a {
 
 .search-form-btn:focus {
   color: #98bcd2;
-
   background-color: #5596be;
 }
 
-.search-form button {
+.search-form .appointment-item {
   color: #333333;
 }
 
-.search-form button:hover {
+.search-form .appointment-item:hover {
   color: #000000;
 }
 
-.search-form button:focus {
+.search-form .appointment-item:focus {
   color: #7db9d3;
+}
+
+.map {
+  background-image: url(../img/map.jpg);
+  width: 100%;
+  height: 593px;
+  background-position: center;
+  background-color: #f2f1ef;
 }
 
 .hashtag {
@@ -183,39 +194,38 @@ a {
   color: #000000;
 }
 
-.social a{
+.social .social-btn{
   color: #82b3d3;
 }
 
-.social a:hover {
+.social .social-btn:hover {
   color: #669ec1;
 }
 
-.socia a:focus {
+.socia .social-btn:focus {
   color: #5596be;
 }
 
 .copyright,
-.copyright a{
+.copyright .copyright-hrml{
   color: #000000;
 }
 
-.copyright a:hover {
+.copyright .copyright-hrml:hover {
   color: #89bbd6;
 }
 
-.copyright a:focus {
+.copyright .copyright-hrml:focus {
   color: #bcbcbc;
 }
 
 .hotel-filter {
-  /* нужно ли здесь сделать что-то вместо
-  картинки на случай того, если она не загрузится? */
-  width: 1200px;
-
-  background-image: url("img/catalog-fon.jpg");
+  height: 418px;
+  background-image: url("../img/catalog-bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-color: #4479a3;
+  background-size: 100% 418px;
 }
 
 .visually-hidden,
@@ -229,42 +239,42 @@ a {
 }
 
 
-.filter-cost button{
+.filter-cost .btn-filter{
   color: #ffffff;
   background: transparent;
   background-color: transparent;
   border: 2px solid #ffffff;
 }
 
-.filter-cost button:hover{
+.filter-cost .btn-filter:hover{
   color: #000000;
   background-color: #ffffff;
 }
 
-.page-header li:hover {
+.page-header .site-nav-list:hover {
   color: #81adc8;
 }
 
-.page-header li:focus {
+.page-header .site-nav-list:focus {
   color: #c9c9c9;
 }
 
-.site-nav-list .current {
+.current {
   color: #796765;
 }
 
-.hotel-labels a {
+.hotel-labels .hotel-labels-link {
   font-size: 12px;
   line-height: 18px;
   font-weight: normal;
   color: #333333;
 }
 
-.hotel-labels a:hover {
+.hotel-labels .hotel-labels-link:hover {
   color: #82b1c3;
 }
 
-.hotel-labels a:focus {
+.hotel-labels .hotel-labels-link:focus {
   color: #000000;
 }
 
@@ -272,15 +282,15 @@ a {
   color: #a8bfcf;
 }
 
-.found-arrows a {
+.found-arrows .found-arrow {
   color: #333333;
 }
 
-.found-arrows a:hover {
+.found-arrows .found-arrow:hover {
   color: #000000;
 }
 
-.found-arrows a:focus {
+.found-arrows .found-arrow:focus {
   color: #82b1c3;
 }
 
@@ -291,19 +301,21 @@ a {
 .found span {
   font-size: 12px;
   line-height: 18px;
-  font-weight: normal;
   color: #000000;
 }
 
-.found h3 {
+.found .found-title {
   font-size: 21px;
-  color: #ffffff;
+  color: #000;
+}
+
+.found-caption {
+  font-weight: bold;
 }
 
 .hotel-filter-title,
 .price-filter-title {
   font-size: 16px;
-  font-weight: normal;
   color: #ffffff;
 }
 
@@ -311,14 +323,12 @@ a {
 .selection-group,
 .selection-input {
   font-size: 14px;
-  font-weight: normal;
   color: #ffffff;
 }
 
 .selection-input {
   color: #ffffff;
   background: transparent;
-  background-color: transparent;
   border: 2px solid #ffffff;
 }
 
@@ -327,18 +337,18 @@ a {
   background-color: #ffffff;
 }
 
-.result-item-action a {
+.result-item-action .result-item-name {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
   font-weight: normal;
 }
 
-.result-item-action a:hover {
+.result-item-action .result-item-name:hover {
   color: #7fadce;
 }
 
-.result-item-action a:focus {
+.result-item-action .result-item-name:focus {
   color: #cbcbcb;
 }
 
@@ -350,7 +360,6 @@ a {
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
-
   background-color: #82b3d3;
 }
 
@@ -368,7 +377,6 @@ a {
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
-
   background-color: #766458;
 }
 
