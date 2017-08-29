@@ -5,7 +5,6 @@ body{
   font-size: 14px;
   line-height: 21px;
   color: #333333;
-  font-weight: normal;
   font-family: 'Pt Sans', 'arial', sans-serif;
   text-transform: uppercase;
   background-color: #f2f2f2;
@@ -19,22 +18,27 @@ a {
   text-decoration: none;
 }
 
-.main-navigation-list {
+.main-nav-list {
   font-size: 14px;
   line-height: 26px;
-  color: #000000;
   background-color: #ffffff;
-}
-
-.site-nav-list {
   list-style: none;
   font-weight: bold;
-
 }
 
-.paragraph {
+.main-nav-list a{
   color: #000;
 }
+
+.main-nav-list a:hover{
+  color: #73b3ce;
+}
+
+.main-nav-list a:focus{
+  color: #cacaca;
+}
+
+
 
 .promo {
   height: 773px;
@@ -58,7 +62,7 @@ a {
 .page-wrapper {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 0 15px 0 #000101 ;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .features-item {
@@ -79,7 +83,7 @@ a {
 
 }
 
-.features-item .feature-title{
+.feature-title{
   font-size: 21px;
   line-height: 1.2;
 }
@@ -263,18 +267,18 @@ a {
   color: #796765;
 }
 
-.hotel-labels .hotel-labels-link {
+.hotel-labels-link {
   font-size: 12px;
   line-height: 18px;
   font-weight: normal;
   color: #333333;
 }
 
-.hotel-labels .hotel-labels-link:hover {
+.hotel-labels-link:hover {
   color: #82b1c3;
 }
 
-.hotel-labels .hotel-labels-link:focus {
+.hotel-labels-link:focus {
   color: #000000;
 }
 
@@ -282,19 +286,19 @@ a {
   color: #a8bfcf;
 }
 
-.found-arrows .found-arrow {
+.found-arrow {
   color: #333333;
 }
 
-.found-arrows .found-arrow:hover {
+.found-arrow:hover {
   color: #000000;
 }
 
-.found-arrows .found-arrow:focus {
+.found-arrow:focus {
   color: #82b1c3;
 }
 
-.found-arrows .arrow-down {
+.arrow-down {
   color: #a8bfcf;
 }
 
@@ -304,7 +308,7 @@ a {
   color: #000000;
 }
 
-.found .found-title {
+.found-title {
   font-size: 21px;
   color: #000;
 }
@@ -356,36 +360,36 @@ a {
  font-weight: normal;
 }
 
-.result-item-action .result-item-btn {
+.result-item-btn {
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
   background-color: #82b3d3;
 }
 
-.result-item-action .result-item-btn:hover {
+.result-item-btn:hover {
   color: #ffffff;
   background-color: #669ec1 ;
 }
 
-.result-item-action .result-item-btn:focus {
+.result-item-btn:focus {
   color: #8cafc5;
   background-color: #5596be ;
 }
 
-.result-item-action .btn-dark {
+.result-item-btn.btn-dark {
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
   background-color: #766458;
 }
 
-.result-item-action .btn-dark:hover {
+.result-item-btn.btn-dark:hover {
   color: #ffffff;
   background-color: #635145 ;
 }
 
-.result-item-action .btn-dark:focus {
+.result-item-btn.btn-dark:focus {
   color: #938b88;
   background-color: #503e34 ;
 }
