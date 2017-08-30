@@ -51,12 +51,16 @@ a {
 
 .intro {
   text-align: center;
+  background-color: #fff;
 }
 
 .main-title {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
+  padding-right: 380px;
+  padding-left: 380px;
+
 }
 
 .page-wrapper {
@@ -393,6 +397,176 @@ a {
   color: #938b88;
   background-color: #503e34 ;
 }
+
+/* ----- Сеточные стили ----- */
+html,
+body {
+  min-width: 1122px;
+  min-height: 1150px;
+}
+
+.page-header {
+  display: flex;
+  height: 70px;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 1200px;
+  padding-right: 78px;
+  padding-left: 78px;
+
+}
+
+.main-nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 816px;
+  height: 56px;
+}
+
+.logo-Sedona {
+  flex-direction: row;
+  width: 140px;
+  align-items: center;
+}
+
+ .promo {
+  display: flex;
+  justify-content: center;
+  padding-top: 77px;
+  height: 508px;
+ }
+
+ .intro {
+  height: 217px;
+  width: 1200px;
+  margin-top: 0px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ }
+
+ .main-title {
+  display: flex;
+  height: 46px;
+  padding-top: 62.5px;
+  padding-bottom: 32.5px;
+ }
+
+ .features {
+  display: flex;
+  height: 1098px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ }
+
+ .features-item {
+  height: 256px;
+  width: 400px;
+
+ }
+
+ .features-item-light {
+  height: 330px;
+ }
+
+ .features-title {
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-top: 47px;
+  margin-bottom: 26px;
+  text-align: center;
+ }
+
+
+.features-item-dark p {
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 62.5px;
+ }
+
+ .feature-title-house,
+ .features-title-food,
+ .features-title-souvenirs {
+  padding-top: 85.5px;
+ }
+
+ 291 764
+ 56
+
+ .offer {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+ }
+
+ .offer-title {
+  justify-content: center;
+  padding-top: 56px;
+  padding-bottom: 33px;
+  margin: 0px;
+
+ }
+  .offer p{
+    justify-content: center;
+    margin-bottom: 82px;
+    margin-top: 0px;
+  }
+
+  .offer-btn {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 144px;
+    padding-right: 144px;
+  }
+
+  .search-form {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    height: 395px;
+    width: 574px;
+    flex-wrap: wrap;
+
+  }
+
+  .appointment-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    height: 38px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
