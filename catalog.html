@@ -27,68 +27,68 @@
           <fieldset class="hotel-filter-group">
 
             <legend class="hotel-filter-title">Инфраструктура</legend>
-
-            <div class="mini-container">
-            <input class="visually-hidden" type="text" id="bus">
+            <ul class="filter-list">
+                <li>
+            <input class="visually-hidden" type="checkbox" id="bus" checked>
             <label class="hotel-filter-item" for="bus">
             Бассейн
             </label>
-            </div>
-            <div class="mini-container">
-            <input class="visually-hidden" type="text" id="parking">
+            </li>
+                <li>
+            <input class="visually-hidden" type="checkbox" id="parking">
             <label class="hotel-filter-item" for="parking">
             Парковка
             </label>
-            </div>
-            <div class="mini-container">
-            <input class="visually-hidden" type="text" id="wifi">
+            </li>
+                <li>
+            <input class="visually-hidden" type="checkbox" id="wifi">
             <label class="hotel-filter-item" for="wifi">
             Wi-Fi
             </label>
-            </div>
+            </li>
+              </ul>
           </fieldset>
 
           <fieldset class="hotel-filter-group">
             <legend class="hotel-filter-title">Тип жилья</legend>
-            <div class="mini-container">
-            <input class="visually-hidden" type="text" id="type-hotel">
+            <ul class="filter-list">
+                <li>
+            <input class="visually-hidden" type="checkbox" id="type-hotel" checked>
             <label class="hotel-filter-item" for="type-hotel">
             Гостиница
             </label>
-            </div>
-            <div class="mini-container">
-            <input class="visually-hidden" type="text" id="type-motel">
+            </li>
+                <li>
+            <input class="visually-hidden" type="checkbox" id="type-motel" checked>
             <label class="hotel-filter-item" for="type-motel">
             Мотель
             </label>
-            </div>
-            <div class="mini-container">
-            <input class="visually-hidden" type="text" id="type-appart">
+            </li>
+                <li>
+            <input class="visually-hidden" type="checkbox" id="type-appart" checked>
             <label class="hotel-filter-item" for="type-appart">
             Апартаменты
             </label>
-            </div>
+            </li>
+             </ul>
 
           </fieldset>
 
-          <fieldset class="filter-cost">
-            <legend class="price-filter-title">Стоимость в сутки (Р)</legend>
-            <div class="selection-price">
-              <div class="selection-group">
-                <label>От
-                <input class="selection-input selection-mim" type="text" value="0">
-                </label>
-                <label>До
-                <input class="selection-input selection-max" type="text" value="3000">
-                </label>
-              </div>
-            </div>
-            <div class="range-controls">
-              <div class="toggle min-toggle"></div>
-              <div class="toggle max-toggle"></div>
-            </div>
-            <button type="submit" class="btn-filter">Показать</button>
-          </fieldset>
+          <div class="filter-range">
+      <div class="filter-range-title">Стоимость в сутки (р):</div>
+      <div class="price-controls">
+        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+      </div>
+      <div class="range-controls">
+        <div class="scale">
+          <div class="bar"></div>
+        </div>
+        <div class="range-toggle range-toggle-min"></div>
+        <div class="range-toggle range-toggle-max"></div>
+      </div>
+      <button class="btn-transparent" type="submit">Показать</button>
+    </div>
         </form>
         <div class="found">
           <h3 class="found-title">Найдено:3</h3>
@@ -123,7 +123,7 @@
             </div>
             <div class="result-item-rating">
               <div class="result-item-stars">
-                4 stars
+              4
               </div>
               <div class="result-item-rate">
                 Рейтинг: 8,5
