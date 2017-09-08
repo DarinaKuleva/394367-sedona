@@ -54,8 +54,9 @@ a {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
-  padding-right: 380px;
-  padding-left: 380px;
+  width: 500px;
+  text-align: center;
+  margin: 0px auto;
 }
 
 .page-wrapper {
@@ -73,6 +74,7 @@ a {
 .features-item-light {
   text-align: center;
   background-color: #ffffff;
+  padding: 52px 0 77px;
 }
 
 .features-item-dark {
@@ -80,9 +82,60 @@ a {
   background-color: #eeeeee;
 }
 
-.feature-title{
+.feature-title {
   font-size: 21px;
   line-height: 1.2;
+}
+
+.feature-title-house {
+position: relative;
+}
+
+.feature-title-house::before {
+  content: "";
+  position: absolute;
+  bottom: 51px;
+  left: 50%;
+  margin-left: -37px;
+  width: 75px;
+  height: 72px;
+  background-image: url("../svg-sedona/house.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.features-title-food {
+position: relative;
+}
+
+.features-title-food::before {
+  content: "";
+  position: absolute;
+  bottom: 51px;
+  left: 50%;
+  margin-left: -37px;
+  width: 74px;
+  height: 70px;
+  background-image: url("../svg-sedona/food.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.features-title-souvenirs {
+position: relative;
+}
+
+.features-title-souvenirs::before {
+  content: "";
+  position: absolute;
+  bottom: 51px;
+  left: 50%;
+  margin-left: -38px;
+  width: 64px;
+  height: 76px;
+  background-image: url("../svg-sedona/souvenirs.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .features-item-light .features-title,
@@ -93,6 +146,13 @@ a {
 .features-item-light p,
 .features-item-dark p {
   color: #333333;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.features-item-dark h2 {
+  padding-right: 30%;
+  padding-left: 30%;
 }
 
 .features-item-dark .features-num{
@@ -186,7 +246,7 @@ a {
 
 .hashtag {
   float: left;
-  width: 33.3%;
+  width: 33.33334%;
   text-align: center;
   line-height: 49px;
   color: #000000;
@@ -194,100 +254,80 @@ a {
   font-weight: bold;
   text-decoration: none;
 }
-.social {
+
+.social  {
   float: left;
-  width: 33.3%;
+  width: 33.33334%;
   text-align: center;
 }
+
+.social  ul {
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+
 .social .social-btn{
-  color: #82b3d3;
-  display: inline-block;
+  background-color: #82b3d3;
   width: 46px;
   height: 48px;
   font-size: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
 }
 
 .social .social-btn:hover {
   background: #669ec1;
 }
 
-.socia .social-btn:focus {
+.social .social-btn:focus {
   background: #5596be;
 }
 
-.social-btn-twitter {
-  background: #82b3d3 url(../svg-sedona/twitter.svg) no-repeat center;
-}
-
-.social-btn-twitter:hover {
-  background: #669ec1 url(../svg-sedona/twitter.svg) no-repeat center;
-}
-
-.social-btn-twitter:active {
-  background: #5596be url(../svg-sedona/twitter.svg) no-repeat center;
-}
-
 .social-btn-fb {
-  background: #82b3d3 url(../svg-sedona/fb-icon.svg) no-repeat center;
+  margin-right: 6px;
+  margin-left: 6px;
 }
 
-.social-btn-fb:hover {
-  background: #669ec1 url(../svg-sedona/fb-icon.svg) no-repeat center;
-}
-
-.social-btn-fb:active {
-  background: #5596be url(../svg-sedona/fb-icon.svg) no-repeat center;
-}
-
-.social-btn-youtub {
-  background: #82b3d3 url(../svg-sedona/youtube.svg) no-repeat center;
-}
-
-.social-btn-youtub:hover {
-  background: #669ec1 url(../svg-sedona/youtube.svg) no-repeat center;
-}
-
-.social-btn-youtub:active {
-  background: #5596be url(../svg-sedona/youtube.svg) no-repeat center;
+.social .social-btn:focus path{
+  fill: #8ab6d1;
 }
 
 .copyright {
   float: right;
-  width: 33.3%;
+  width: 33.33334%;
   text-align: center;
-}
-
-.copyright p {
-  display: inline-block;
-  margin-right: 8px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.copyright,
-.copyright .btn{
   color: #000000;
+  margin: 0;
 }
 
-.copyright .btn:hover {
-  color: #89bbd6;
+.copyright span {
+  margin-right: 8px;
+  /*как в каталоге выровнять ? */
 }
 
-.copyright .cbtn:focus {
-  color: #bcbcbc;
+.copyright .btn:hover path{
+  fill: #7fb0d1;
+}
+
+.copyright .btn:focus path{
+  fill: #bcbcbc;
 }
 
 .hotel-filter {
   background: #406c90 url(../img/catalog-bg.jpg) no-repeat 0px -55px;
 }
 
-.visually-hidden,
-.visually-hidden:hover,
-.visually-hidden:focus {
-  background-color: #ffffff;
-}
 
-.visually-hidden:disabled {
+
+.filter-list:disabled {
   background-color: #6c6867;
 }
 
@@ -324,20 +364,30 @@ a {
   color: #a8bfcf;
 }
 
-.found-arrow {
-  color: #333333;
+.arrow-down::before {
+  content: "\25bc";
+  font-size: 13px;
+}
+
+.arrow-up {
+  color: #cacaca;
+}
+
+.arrow-down {
+  color: #a8bfcf;
+}
+
+.arrow-up::before {
+  content: "\25b2";
+  font-size: 13px;
 }
 
 .found-arrow:hover {
   color: #000000;
 }
 
-.found-arrow:focus {
-  color: #82b1c3;
-}
-
-.arrow-down {
-  color: #a8bfcf;
+.found-arrow:active {
+  color: #81b3d2;
 }
 
 .found span {
@@ -449,15 +499,14 @@ body {
 
 .main-nav-list {
   display: flex;
-  align-items: center;;
+  align-items: center;
   margin: 0;
-  padding: 0;
   list-style: none;
 }
 
 .main-nav-list li {
   width: 20%;
-  padding:14px 0;
+  padding: 14px 0;
 }
 
 .main-nav-list li:nth-child(2) {
@@ -475,8 +524,9 @@ body {
 }
 
 .logo {
-  width: 20%;
-  padding-left: 44%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .promo {
@@ -484,6 +534,14 @@ body {
   justify-content: center;
   padding-top: 77px;
   height: 508px;
+}
+
+.promo::after {
+  content: url(../img/white-band.png);
+  /* нужно лиуказать ширину и высоту? */
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 
 .intro {
@@ -498,22 +556,17 @@ body {
 .main-title {
   display: flex;
   height: 46px;
-  padding-top: 62.5px;
-  padding-bottom: 32.5px;
+  padding-top: 63px;
+  padding-bottom: 33px;
 }
 
 .features {
   display: flex;
-  height: 1098px;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .features-item {
-  height: 256px;
-  width: 400px;
+  width: 33.3334%;
 }
 
 .features-image {
@@ -527,10 +580,6 @@ body {
   position: absolute;
   top: -75px;
   height: auto;
-}
-
-.features-item-light {
-  height: 330px;
 }
 
 .features-title {
@@ -579,13 +628,6 @@ body {
   width: 569px;
 }
 
-.search-form form {
-  list-style: none;
-  display: flex;
-  width: 580px; /*ghjdthbnm */
-  flex-wrap: wrap;
-}
-
 .appointment-item {
   margin: 0;
   padding-left: 59px;
@@ -606,19 +648,15 @@ body {
   margin-top: 0;
   margin-left: 50%;
   transform: translateX(-50%);
-  font-size: 14px;
-  line-height: 26px;
-  color: #000000;
   padding: 60px 54px;
-  width: 461px;
+  display: none;
 }
 
-.footer-wrapper {
+.search-form form {
+  list-style: none;
   display: flex;
-  width: 100%;
-  margin:0px;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 30px 0px;
+  width: 580px; /*ghjdthbnm */
+  flex-wrap: wrap;
 }
 
 .hotel-filter {
@@ -636,9 +674,6 @@ body {
   padding: 0;
 }
 
-.hotel-filter-item {
-  padding: 5px 0;
-}
 
 .filter-list {
   margin: 0px;
@@ -650,9 +685,14 @@ body {
   margin-top: 25px;
 }
 
-.visually-hidden {
-  height: 23px;
-  width: 23px;
+.hotel-filter-item {
+  margin-left: 14px;
+  padding: 5px 0;
+}
+
+.hotel-filter-item-off {
+  margin-left: 18px;
+  padding: 5px 0;
 }
 
 .filter-range {
@@ -781,14 +821,14 @@ body {
 
 .found {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:  wrap;
   padding: 31px 0 27px;
   border-bottom: 1px solid #e5e5e5;
   background-color: #fff;
 }
 
 .found-title{
-  margin-left: 73px;
+  margin-left: 6%;
   margin-right: 50px;
   margin-top: auto;
   margin-bottom: auto;
@@ -812,10 +852,16 @@ body {
 }
 
 .found-arrows {
-  margin-right: 73px;
+  color: #333333;
+  float: right;
+  width: 40px;
+  padding: 3px 0px 0 0px;
+  font-size: 0;
+  margin-right: 6%;
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 438px;
+  float: right;  /* почему не работает? значит, чтобы
+  передвинуть вправо нужно маргин? */
 }
 
 .result {
@@ -833,7 +879,7 @@ body {
 
 .result-item-image {
   height: 90px;
-  margin-left: 73px;
+  margin-left: 6%;
   margin-right: 30px;
   margin-top: auto;
   margin-bottom: auto;
@@ -864,26 +910,61 @@ body {
 }
 
 .result-item-rating{
-  margin-right: 6%;
   float: right;
+  width: 120px;
+  margin-right: 6%;
 }
 
 .result-item-stars {
-  display: flex;
+  width: 120px;
+  margin-top: -1px;
+  font-size: 10px;
+}
+
+.item-star-rating {
+  float: right;
+}
+
+.icon-star::before {
+  content: "\2605";
+  color: #81b3d2;
+  font-size: 22px;
+  padding-left: 5px;
 }
 
 .result-item-rate {
+  float: right;
   margin-top: 36px;
   background: #f2f2f2;
   color: #8b8b8b;
   text-align: center;
-  width: 111px;
+  width: 111px;;
 }
 
-.page-footer {
+.page-footer,
+.footer-wrapper {
   width: 100%;
   margin:0px;
   display: flex;
   background: rgba(255, 255, 255, 0.9);
   padding: 30px 0px;
 }
+
+
+/*
+
+стрки main-nav неподвижны а лого подвижен
+
+фон у главной страницы больше чем в фш
+
+в каталоге выровнять галочку и надпись
+
+в каталоге галочки сделаны как png но должны ли при нажатии срабатывать?
+и как у png сделать другой цвет?
+
+форма выплывающая не получилась
+
+карта? должнв ли быть подвижной?
+
+можно ли нарисовать звездочки и стрелочки
+*/
