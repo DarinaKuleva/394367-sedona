@@ -16,10 +16,12 @@ a {
 }
 
 .page-wrapper {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   background-color: #fff;
   box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+  box-sizing: border-box;
 }
 
 .main-nav-list {
@@ -198,6 +200,7 @@ padding: 0 7px;
 .offer-btn {
   font-size: 21px;
   line-height: 26px;
+  font-weight: bold;
   color: #ffffff;
   background-color: #776358;
 }
@@ -211,51 +214,6 @@ padding: 0 7px;
   background-color: #503e34;
 }
 
-.appointment-item input[type="text"] {
-  color: #000000;
-  text-transform: uppercase;
-  border: none;
-  background-color: #f2f2f2;
-}
-
-.appointment-item input:hover {
-  background-color: #ebebeb;
-}
-
-.appointment-item input:focus {
-  background-color: #ffffff;
-  border: 2px solid #e5e5e5;
-}
-
-.search-form-btn {
-  font-size: 21px;
-  line-height: 26px;
-  color: #ffffff;
-  background-color: #82b3d3;
-  border: none;
-}
-
-.search-form-btn:hover {
-  background-color: #669ec1;
-}
-
-.search-form-btn:focus {
-  color: #98bcd2;
-  background-color: #5596be;
-}
-
-.search-form .appointment-item {
-  color: #333333;
-}
-
-.search-form .appointment-item:hover {
-  color: #000000;
-}
-
-.search-form .appointment-item:focus {
-  color: #7db9d3;
-}
-
 .map {
   background-image: url(../img/map.jpg);
   width: 100%;
@@ -264,15 +222,265 @@ padding: 0 7px;
   background-color: #f2f1ef;
 }
 
+.index-search {
+}
+
+.index-search .title-booking{
+  margin-top: 52px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.index-search h3 {
+  text-align: center;
+  margin: 0;
+  background: #766357;
+  padding: 28px;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.index-search>p {
+  width: 550px;
+  margin: 30px auto;
+  text-align: center;
+  line-height: 24px;
+}
+
+.search-form {
+  width: 568px;
+  margin: 0 auto;
+  padding-top: 18px;
+  text-align: center;
+  background: #ffffff;
+}
+
+form p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.search-model-show {
+  display: block;
+  animation: slide 0.6s;
+}
+
+.search-model {
+  padding: 57px 54px;
+  position: absolute;
+  width: 461px;
+  z-index: 8;
+  background: #fff;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  display: none;
+
+}
+.date-arrival label {
+  margin: 4px 0 0 4px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.date input {
+  width: 315px;
+  height: 32px;
+  font-weight: bold;
+  margin-left: 24px;
+  margin-bottom: 27px;
+  padding-right: 12px;
+  padding-left: 12px;
+  text-transform: uppercase;
+  border: none;
+  background: #f2f2f2 url(../svg-sedona/calendar.svg) no-repeat 97% 50%;;
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.date-departure label {
+  margin: 6px 0 0px 2px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.person-counter {
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.person-counter-left {
+}
+.person-counter-right {
+}
+
+.person-counter label {
+  margin-top: 9px;
+  margin-left: 3px;
+}
+
+.guest-range {
+  outline: none;
+  display: flex;
+  width: 114px;
+}
+
+.person-counter button {
+  width: 38px;
+  height: 38px;
+  color: #a9a9a9;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
+.guest-range input {
+  font-weight: bold;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.person-counter:nth-child(4) {
+    /*margin-right: 0; */
+}
+
+ .counter {
+  display: flex;
+  justify-content: space-between;
+
+ }
+.btn-search {
+  margin-top: 58px;
+  width: 460px;
+  padding: 15px 0;
+  padding-left: 2px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #82b3d3;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.date-arrival {
+  position: relative;
+  display: flex;
+}
+
+.date-departure {
+  position: relative;
+  display: flex;
+}
+
+
+.kid {
+  width: 60px;
+  text-align: right;
+  margin-right: 27px;
+  word-break: break-all;
+}
+
+.adult {
+  margin-right: 41px;
+}
+
+.icon-minus:before {
+  content: "-";
+  font-size: 23px;
+  cursor: pointer;
+  line-height: 38px;
+}
+
+.icon-plus:before {
+  content: "+";
+  font-size: 23px;
+  cursor: pointer;
+  line-height: 38px;
+}
+
+.btn-search:hover {
+  background: #669ec0;
+}
+
+.btn-search:active {
+  background: #5596be;
+  color: #98bcd2;
+}
+
+.search-form input[type="text"] {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.items .wrapper {
+  padding-bottom: 30px;
+}
+
+.date input:hover {
+  background: #ebebeb  url(../svg-sedona/calendar-hover.svg) no-repeat 97% 50%;
+  border: 2px solid #ebebeb;}
+
+.date input:active {
+  background: url(../svg-sedona/calendar-active.svg) no-repeat 97% 50%;
+}
+
+.icon-plus:hover {
+  color: #000000;
+}
+
+.icon-plus:active {
+  color: #81b3d2;
+}
+
+.icon-minus:hover {
+  color: #000000;
+}
+
+.icon-minus:active {
+  color: #81b3d2;
+}
+
+
 .hashtag {
   width: 33.3334%;
   text-align: left;
+  padding-left: 6%;
   line-height: 49px;
   color: #000000;
   font-size: 21px;
   font-weight: bold;
   text-decoration: none;
-  padding-left: 62px;
   box-sizing: border-box;
 }
 
@@ -282,7 +490,7 @@ padding: 0 7px;
 }
 
 .social  ul {
-   display: flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
@@ -516,6 +724,12 @@ body {
   height: 100%;
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .main-nav-list {
   display: flex;
   align-items: center;
@@ -670,67 +884,10 @@ body {
 
 .main-footer {
   position: relative;
+  overflow: hidden;
 }
 
 .map {
-}
-
-.search-form {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -284px;
-  padding: 60px 54px;
-  z-index: 2;
-  background: #fff;
-  width: 568px;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.search-form label {
-  padding-left: 3px;
-  padding-top: 1px;
-  display: inline-block;
-  color: red;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
-  vertical-align: middle;
-}
-
-.search-input input {
-  float: right;
-  width: 328px;
-  height: 32px;
-  padding-left: 12px;
-  margin: 0 0 30px;
-  text-transform: uppercase;
-  border: none;
-  background: #f2f2f2 url(../img/calendar.png) no-repeat 97% 50%;
-  outline: none;
-  border: 2px solid transparent;
-}
-
-.search-input {
-  position: relative;
-  border-style: none;
-}
-
-.search-form input {
-  outline: none;
-display: inline-block;
-width: 381px;
-vertical-align: middle;
-border-style: none;
-background-color: blue ;
-border: 1px solid blue ;
-font-size: 14px;
-line-height:26px;
-font-weight: 700;
-min-height:26px;
-padding: 5px 38px 5px 13px;
 }
 
 .hotel-filter-group {
@@ -1029,13 +1186,25 @@ label {
   margin-left: auto;
 }
 
-.page-footer,
 .footer-wrapper {
   display: flex;
+  width: 1056px;
   background: rgba(255, 255, 255, 0.9);
   padding: 33px 6%;
+  position: absolute;
+  bottom: 0;
+
+}
+
+.footer-wrapper-catalog {
+  display: flex;
+  width: 1056px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 33px 6%;
+  bottom: 0;
 }
 /*
+svg календарь
 
 звезды. как сдеать расстояние между ними
 
@@ -1044,4 +1213,8 @@ promo два раза повторение, разобратся с высото
 форма выплывающая не получилась
 
 карта? должнв ли быть подвижной?
+
+нужно ли чтобы кнопки куда то переходили после
+
+плюс минус
 */
