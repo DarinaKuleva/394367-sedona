@@ -8,7 +8,6 @@ link.addEventListener("click", function (event) {
     popup.classList.remove("search-model-show");
     login.focus();
   } else {
-    event.preventDefault();
     popup.classList.add("search-model-show");
   }
 });

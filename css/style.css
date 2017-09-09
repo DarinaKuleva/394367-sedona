@@ -279,11 +279,6 @@ form p {
   }
 }
 
-.search-model-show {
-  display: block;
-  animation: slide 0.6s;
-}
-
 .search-model {
   padding: 57px 54px;
   position: absolute;
@@ -292,10 +287,15 @@ form p {
   background: #fff;
   left: 50%;
   top: 0;
-  transform: translateX(-50%);
+  margin-left: -284px;
   display: none;
-
 }
+
+.search-model-show {
+  display: block;
+  animation: slide 0.6s;
+}
+
 .date-arrival label {
   margin: 4px 0 0 4px;
   font-weight: 700;
@@ -313,9 +313,9 @@ form p {
   padding-left: 12px;
   text-transform: uppercase;
   border: none;
-  background: #f2f2f2 url(../svg-sedona/calendar.svg) no-repeat 97% 50%;;
   outline: none;
-  border: 2px solid transparent;
+  border: #f2f2f2 2px solid;
+  background-color: #f2f2f2;
 }
 
 .date-departure label {
@@ -323,6 +323,24 @@ form p {
   font-weight: 700;
   font-size: 14px;
   line-height: 26px;
+}
+
+.icon-calendar {
+  border: none;
+  position: absolute;
+  top: 8px;
+  left: 430px;
+  padding: 0;
+  fill: #acacac;
+  outline: none;
+}
+
+.icon-calendar:hover svg{
+fill: #010101;
+}
+
+.icon-calendar:focus svg{
+fill: #72b1d2;
 }
 
 .person-counter {
@@ -334,8 +352,11 @@ form p {
 }
 
 .person-counter-left {
+  padding-top: 2px;
 }
+
 .person-counter-right {
+  padding-top: 2px;
 }
 
 .person-counter label {
@@ -378,7 +399,7 @@ form p {
 
  }
 .btn-search {
-  margin-top: 58px;
+  margin-top: 56px;
   width: 460px;
   padding: 15px 0;
   padding-left: 2px;
@@ -416,17 +437,21 @@ form p {
 }
 
 .icon-minus:before {
-  content: "-";
+  content: "\2212";
   font-size: 23px;
   cursor: pointer;
   line-height: 38px;
+  font-weight: bold;
 }
 
 .icon-plus:before {
-  content: "+";
+  content: "\002B";
   font-size: 23px;
   cursor: pointer;
   line-height: 38px;
+  font-weight: bold;
+
+
 }
 
 .btn-search:hover {
@@ -448,11 +473,13 @@ form p {
 }
 
 .date input:hover {
-  background: #ebebeb  url(../svg-sedona/calendar-hover.svg) no-repeat 97% 50%;
-  border: 2px solid #ebebeb;}
+  border: 2px solid #ebebeb;
+  background-color: #ebebeb;
+}
 
 .date input:active {
-  background: url(../svg-sedona/calendar-active.svg) no-repeat 97% 50%;
+  border: 2px solid #ebebeb;
+  background-color: #fff;
 }
 
 .icon-plus:hover {
@@ -474,19 +501,17 @@ form p {
 
 .hashtag {
   width: 33.3334%;
-  text-align: left;
-  padding-left: 6%;
   line-height: 49px;
   color: #000000;
   font-size: 21px;
   font-weight: bold;
-  text-decoration: none;
-  box-sizing: border-box;
+  text-align: center;
+  line-height: 49px;
 }
 
 .social  {
-  width: 33.3334%;
-  text-align: center;
+    width: 33.3334%;
+    text-align: center;
 }
 
 .social  ul {
@@ -528,21 +553,17 @@ form p {
 
 .copyright {
   width: 33.3334%;
-  color: #000000;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: 28px;
-  box-sizing: border-box;
+  text-align: center;
 }
 
-.copyright span {
+.copyright p{
+  display: inline-block;
   margin-right: 8px;
 }
 
 .copyright .btn {
-  margin-top: 6px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .copyright .btn:hover path{
@@ -723,7 +744,6 @@ html,
 body {
   height: 100%;
 }
-
 .clearfix:after {
   content: "";
   display: table;
@@ -947,12 +967,10 @@ label {
   background-repeat: no-repeat;
 }
 
-.check-icon+label:disabled {
-  background: url(../svg-sedona/checkbox-off-disabled.svg);
-}
-
-.check-icon:checked+label:disabled {
-  background: url(../svg-sedona/checkbox-on-disabled.svg);
+.check-icon:disabled ~ label,
+.check-icon:disabled ~ label:before {
+  fill: #6b6567; /* ???? */
+  pointer-events: none;
 }
 
 .filter-range {
@@ -1152,24 +1170,27 @@ label {
 
 .four-stars {
   background: url(../svg-sedona/star.svg);
+  background-size: 23px 18px;
   background-repeat: repeat;
-  width: 72px;
+  width: 90px;
   height: 18px;
   margin-left: auto;
 }
 
 .three-stars {
   background: url(../svg-sedona/star.svg);
+  background-size: 23px 18px;
   background-repeat: repeat;
-  width: 54px;
+  width: 67px;
   height: 18px;
   margin-left: auto;
 }
 
 .two-stars {
   background: url(../svg-sedona/star.svg);
+  background-size: 23px 18px;
   background-repeat: repeat;
-  width: 36px;
+  width: 43px;
   height: 18px;
   margin-left: auto;
 }
@@ -1187,22 +1208,25 @@ label {
 }
 
 .footer-wrapper {
-  display: flex;
-  width: 1056px;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 33px 6%;
-  position: absolute;
-  bottom: 0;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 35px 0px;
 
 }
 
 .footer-wrapper-catalog {
-  display: flex;
-  width: 1056px;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 33px 6%;
-  bottom: 0;
+    bottom: 0px;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 35px 0px;
 }
+
 /*
 svg календарь
 
