@@ -28,20 +28,20 @@
             <legend class="hotel-filter-title">Инфраструктура</legend>
             <ul class="filter-list">
               <li>
-                <img src="img/check-catalog.png" width="27" height="23" alt="галочка">
+                <input class="check-icon" type="checkbox" id="pool" checked hidden>
                 <label class="hotel-filter-item" for="pool">
                 Бассейн
                 </label>
               </li>
               <li>
-                <img src="img/check-off-catalog.png" width="23" height="23" alt="галочка не нажата">
-                <label class="hotel-filter-item hotel-filter-item-off " for="parking">
+                <input class="check-icon" type="checkbox" id="parking" hidden>
+                <label class="hotel-filter-item " for="parking">
                 Парковка
                 </label>
               </li>
               <li>
-                <img src="img/check-off-catalog.png" width="23" height="23" alt="галочка не нажата">
-                <label class="hotel-filter-item hotel-filter-item-off" for="wifi">
+                <input class="check-icon" type="checkbox" id="wifi" hidden>
+                <label class="hotel-filter-item " for="wifi">
                 Wi-Fi
                 </label>
               </li>
@@ -51,19 +51,19 @@
             <legend class="hotel-filter-title">Тип жилья</legend>
             <ul class="filter-list">
               <li>
-                <img src="img/check-catalog.png" width="27" height="23" alt="галочка">
+                <input class="check-icon" type="checkbox" id="type-hotel" checked hidden>
                 <label class="hotel-filter-item" for="type-hotel">
                 Гостиница
                 </label>
               </li>
               <li>
-                <img src="img/check-catalog.png" width="27" height="23" alt="галочка">
+                <input class="check-icon" type="checkbox" id="type-motel" checked hidden>
                 <label class="hotel-filter-item" for="type-motel">
                 Мотель
                 </label>
               </li>
               <li>
-                <img src="img/check-catalog.png" width="27" height="23" alt="галочка">
+                <input class="check-icon" type="checkbox" id="type-appart" checked hidden>
                 <label class="hotel-filter-item" for="type-appart">
                 Апартаменты
                 </label>
@@ -87,7 +87,7 @@
           </div>
         </form>
         <div class="found">
-          <h3 class="found-title">Найдено:3</h3>
+          <h3 class="found-title">Найдено: 3</h3>
           <span class="found-caption">Сортировка:</span>
           <div class="hotel-labels">
             <a class="hotel-labels-link current" href="#">По цене</a>
@@ -99,7 +99,8 @@
             <a class="found-arrow arrow-down" href="#">down</a>
           </div>
         </div>
-        <section class="result">
+        <section class="results">
+<article class="result">
           <article class="result-item">
             <a class="result-item-image" href="#">
             <img src="img/hotel-img1.jpg" width="135" height="90" alt="Amara resort & spa">
@@ -118,17 +119,15 @@
               </div>
             </div>
             <div class="result-item-rating">
-              <div class="result-item-stars">
-                <span class="item-star-rating icon-star"></span>
-                <span class="item-star-rating icon-star"></span>
-                <span class="item-star-rating icon-star"></span>
-                <span class="item-star-rating icon-star"></span>
+              <div class="four-stars">
               </div>
               <div class="result-item-rate">
                 Рейтинг: 8,5
               </div>
             </div>
           </article>
+          </article>
+          <article class="result">
           <article class="result-item">
             <a class="result-item-image" href="#">
             <img src="img/hotel-img2.jpg" width="135" height="90" alt="Desert quail inn">
@@ -147,16 +146,15 @@
               </div>
             </div>
             <div class="result-item-rating">
-              <div class="result-item-stars">
-                <span class="item-star-rating icon-star"></span>
-                <span class="item-star-rating icon-star"></span>
-                <span class="item-star-rating icon-star"></span>
+              <div class="three-stars">
               </div>
               <div class="result-item-rate">
                 Рейтинг: 8,9
               </div>
             </div>
           </article>
+          </article>
+          <article class="result">
           <article class="result-item">
             <a class="result-item-image" href="#">
             <img src="img/hotel-img3.jpg" width="135" height="90" alt="Villas at poco diablo">
@@ -175,14 +173,13 @@
               </div>
             </div>
             <div class="result-item-rating">
-              <div class="result-item-stars">
-                <span class="item-star-rating icon-star"></span>
-                <span class="item-star-rating icon-star"></span>
+              <div class="two-stars">
               </div>
               <div class="result-item-rate">
                 Рейтинг: 9,2
               </div>
             </div>
+            </article>
           </article>
         </section>
       </main>

@@ -16,8 +16,8 @@
           </a>
           <ul class="main-nav-list">
             <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-            <li><a href="#">Карта штата</a></li>
+            <li class="foto-video"><a href="#">Фото и видео</a></li>
+            <li class="map-state"><a href="#">Карта штата</a></li>
             <li><a href="catalog.html">Гостиницы</a></li>
           </ul>
         </nav>
@@ -28,7 +28,7 @@
         </section>
         <section class="intro">
           <h1 class="main-title">
-            Седона-небольшой городок в аризоне, заслуживающий большего!
+            Седона&mdash;небольшой городок в аризоне, заслуживающий большего!
           </h1>
           <p>
             Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!
@@ -38,43 +38,43 @@
           <article class="features-item">
             <h2 class="features-title">Настоящий городок</h2>
             <span class="features-num">&mdash;№1&mdash;</span>
-            <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
+            <p>Седона&mdash;не аттракцион для туристов, там течет своя жизнь</p>
           </article>
           <div class="features-image">
             <img src="img/feature-city.jpg" width="800" height="256" alt="Настоящий городок">
           </div>
-          <article class="features-item features-item-light">
+          <article class="features-item features-item-light features-item-light-house">
             <h2 class="features-title feature-title-house">Жилье</h2>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </article>
-          <article class="features-item features-item-light">
+          <article class="features-item features-item-light features-item-light-food">
             <h2 class="features-title features-title-food">Еда</h2>
             <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
           </article>
-          <article class="features-item features-item-light">
+          <article class="features-item features-item-light features-item-light-souvenirs">
             <h2 class="features-title features-title-souvenirs">Сувениры</h2>
             <p>Не только китайского, но и местного производства!</p>
           </article>
           <div class="features-image">
             <img src="img/feature-bridge.jpg" width="800" height="256" alt="Мост дьявола">
           </div>
-          <article class="features-item">
+          <article class="features-item features-item-devil">
             <h2 class="features-title">Там есть <br> мост дьявола</h2>
             <span class="features-num">&mdash;№2&mdash;</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </article>
-          <article class="features-item features-item-dark">
+          <article class="features-item features-item-dark features-area">
             <h2 class="features-title">Небольшая площадь</h2>
             <span class="features-num">&mdash;№3&mdash;</span>
             <p>Все достопримечательности находятся очень близко</p>
           </article>
-          <article class="features-item features-item-dark">
+          <article class="features-item features-item-dark features-road">
             <h2 class="features-title">Красивая дорога</h2>
             <span class="features-num features-num-dark">&mdash;№4&mdash;</span>
             <p>Ехать в седону из лас-вегаса совсем не скучно! </p>
           </article>
-          <article class="features-item features-item-dark">
-            <h2 class="features-title">Мало туристов</h2>
+          <article class="features-item features-item-dark features-tourist">
+            <h2 class="features-title">Мало<br>туристов</h2>
             <span class="features-num features-num-dark">&mdash;№5&mdash;</span>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </article>
@@ -85,18 +85,24 @@
             и мы покажем вам лучшие предложения гостиниц в седоне
           </p>
           <a class="offer-btn" href="search-hotel.html">Поиск гостиницы в Седоне</a>
-          <div class="search-form ">
+
+        </section>
+      </main>
+      <footer class="main-footer">
+        <div class="map">
+        </div>
+         <div class="search-model">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
               <label class="appointment-item">
               Дата заезда:
-              <input type="text" name="date" value="24 апреля 2017">
-              <button>Календарь</button>
               </label>
+              <div class="search-input">
+              <input type="text" name="date" value="24 апреля 2017">
+              </div>
               <label class="appointment-item">
               Дата выезда:
-              <input type="text" name="date" value="4 ИЮЛЯ 2017">
-              <button>Календарь</button>
               </label>
+              <input type="text" name="date" value="4 ИЮЛЯ 2017">
               <label class="appointment-item">
               Взрослые:
               <button class="minus">
@@ -118,13 +124,7 @@
               </button>
               </label>
               <button class="search-form-btn btn" type="submit">Найти</button>
-            </form>
           </div>
-        </section>
-      </main>
-      <footer class="main-footer">
-        <div class="map">
-        </div>
         <section class="footer-wrapper">
           <div class="hashtag">
             <b>#Visitsedona</b>
