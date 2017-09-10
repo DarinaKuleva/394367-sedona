@@ -45,7 +45,7 @@ a {
 
 .promo {
   background-image: url("../img/index-bg.jpg");
-  background-position: top center;
+  background-position: center -56px;
   background-repeat: no-repeat;
   background-size: 100% 773px;
   background-color: #325572;
@@ -187,14 +187,11 @@ padding: 0 7px;
 }
 
 .offer-title {
+  width: 25%;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
   cursor: pointer;
-}
-
-.offer p {
-  line-height: 24px;
 }
 
 .offer-btn {
@@ -269,17 +266,7 @@ form p {
   line-height: 26px;
 }
 
-@keyframes slide {
-  0% {
-    transform: translateY(-100%);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.search-model {
+.search-modal {
   padding: 57px 54px;
   position: absolute;
   width: 461px;
@@ -291,7 +278,7 @@ form p {
   display: none;
 }
 
-.search-model-show {
+.search-modal-show {
   display: block;
   animation: slide 0.6s;
 }
@@ -333,6 +320,7 @@ form p {
   padding: 0;
   fill: #acacac;
   outline: none;
+  background: transparent;
 }
 
 .icon-calendar:hover svg{
@@ -477,7 +465,8 @@ fill: #72b1d2;
   background-color: #ebebeb;
 }
 
-.date input:active {
+.date input:active,
+.date input:focus {
   border: 2px solid #ebebeb;
   background-color: #fff;
 }
@@ -623,12 +612,13 @@ fill: #72b1d2;
   margin-left: 6px;
 }
 
-.arrow-up {
+.found-arrow {
   color: #cacaca;
 }
 
-.arrow-down {
-  color: #a8bfcf;
+.activ {
+  color: #81b3d2;
+  pointer-events: none;
 }
 
 .arrow-up::before {
@@ -702,8 +692,8 @@ fill: #72b1d2;
 
 .result-item-action p {
   font-weight: normal;
-  margin-bottom: 19px;
-  margin-top: 1px;
+  margin-bottom: 15px;
+  margin-top: 2px;
 }
 
 .result-item-btn {
@@ -885,9 +875,13 @@ body {
   margin: 0 auto;
 }
 
-.offer p{
+.offer p {
+  width: 37%;
+  line-height:24px;
   margin-top: 4px;
   margin-bottom: 47px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .offer-btn {
@@ -1134,7 +1128,7 @@ label {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.result .result-item {
+.result-item {
   display: flex;
   margin-bottom: 18px;
   padding: 0 6%;
@@ -1146,6 +1140,7 @@ label {
 }
 
 .result-item-action {
+  width: 30%;
 }
 
 .result-item-more {
@@ -1154,12 +1149,13 @@ label {
 }
 
 .result-item-btn {
-  height: 27px;
-  width: 110px;
+  display: block;
   padding-right: 17px;
-  padding-left: 17px;
-  padding-top: 4px;
+  padding-left: 16px;
   padding-bottom: 4px;
+}
+
+.result-item-part {
   margin-right: 7px;
 }
 
@@ -1228,17 +1224,16 @@ label {
 }
 
 /*
-svg календарь
 
-звезды. как сдеать расстояние между ними
 
-promo два раза повторение, разобратся с высотой
-
-форма выплывающая не получилась
-
-карта? должнв ли быть подвижной?
 
 нужно ли чтобы кнопки куда то переходили после
 
 плюс минус
+
+круглишочки в каталоге???
+
+черточки  у to the скорее всего через svg
+
+заголовки по результатам не сильно ли выезжают (podyj 5 gbrctktq)
 */
