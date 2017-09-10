@@ -39,7 +39,7 @@ a {
   color: #73b3ce;
 }
 
-.main-nav-list a:focus{
+.main-nav-list a:focus {
   color: #cacaca;
 }
 
@@ -86,7 +86,6 @@ a {
   margin: 20px 60px;
 }
 
-
 .features-item-dark {
   text-align: center;
   background-color: #eeeeee;
@@ -116,7 +115,7 @@ position: relative;
 }
 
 .features-title-food {
-position: relative;
+  position: relative;
 }
 
 .features-title-food::before {
@@ -133,7 +132,7 @@ position: relative;
 }
 
 .features-title-souvenirs {
-position: relative;
+  position: relative;
 }
 
 .features-title-souvenirs::before {
@@ -217,38 +216,6 @@ position: relative;
   background-color: #f2f1ef;
 }
 
-.index-search {
-}
-
-.index-search .title-booking{
-  margin-top: 52px;
-  text-align: center;
-  font-size: 30px;
-  line-height: 24px;
-  color: #000000;
-  font-weight: bold;
-}
-
-.index-search h3 {
-  text-align: center;
-  margin: 0;
-  background: #766357;
-  padding: 28px;
-  color: #ffffff;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-
-  cursor: pointer;
-}
-
-.index-search>p {
-  width: 550px;
-  margin: 30px auto;
-  text-align: center;
-  line-height: 24px;
-}
-
 .search-form {
   width: 568px;
   margin: 0 auto;
@@ -257,12 +224,11 @@ position: relative;
   background: #ffffff;
 }
 
-form p {
+/*form p {
   margin: 0;
   font-size: 14px;
   font-weight: bold;
-  line-height: 26px;
-}
+  line-height: 26px; */
 
 .search-modal {
   padding: 57px 54px;
@@ -285,7 +251,6 @@ form p {
   box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
 }
 
-
 .date-arrival label {
   margin: 4px 0 0 4px;
   font-weight: 700;
@@ -297,7 +262,7 @@ form p {
   width: 315px;
   height: 32px;
   font-weight: bold;
-  margin-left: 24px;
+  margin-left: 21px;
   margin-bottom: 27px;
   padding-right: 12px;
   padding-left: 12px;
@@ -326,12 +291,12 @@ form p {
   background: transparent;
 }
 
-.icon-calendar:hover svg{
-fill: #010101;
+.icon-calendar:hover svg {
+  fill: #010101;
 }
 
-.icon-calendar:focus svg{
-fill: #72b1d2;
+.icon-calendar:focus svg {
+  fill: #72b1d2;
 }
 
 .person-counter {
@@ -389,6 +354,7 @@ fill: #72b1d2;
   justify-content: space-between;
 
  }
+
 .btn-search {
   margin-top: 56px;
   width: 460px;
@@ -442,7 +408,6 @@ fill: #72b1d2;
   line-height: 38px;
   font-weight: bold;
 
-
 }
 
 .btn-search:hover {
@@ -490,7 +455,6 @@ fill: #72b1d2;
   color: #81b3d2;
 }
 
-
 .hashtag {
   width: 33.3334%;
   line-height: 49px;
@@ -502,8 +466,8 @@ fill: #72b1d2;
 }
 
 .social  {
-    width: 33.3334%;
-    text-align: center;
+  width: 33.3334%;
+  text-align: center;
 }
 
 .social  ul {
@@ -516,7 +480,7 @@ fill: #72b1d2;
 }
 
 
-.social .social-btn{
+.social .social-btn {
   background-color: #82b3d3;
   width: 46px;
   height: 48px;
@@ -539,7 +503,7 @@ fill: #72b1d2;
   margin-left: 6px;
 }
 
-.social .social-btn:focus path{
+.social .social-btn:focus path {
   fill: #8ab6d1;
 }
 
@@ -548,7 +512,7 @@ fill: #72b1d2;
   text-align: center;
 }
 
-.copyright p{
+.copyright p {
   display: inline-block;
   margin-right: 8px;
   vertical-align: middle;
@@ -559,11 +523,11 @@ fill: #72b1d2;
   vertical-align: middle;
 }
 
-.copyright .btn:hover path{
+.copyright .btn:hover path {
   fill: #7fb0d1;
 }
 
-.copyright .btn:focus path{
+.copyright .btn:focus path {
   fill: #bcbcbc;
 }
 
@@ -820,9 +784,6 @@ body {
   width: 100%;
   height: 256px;
   display: block;
-  /*position: absolute;
-  top: -75px;
-  height: auto; */
 }
 
 .features-title {
@@ -863,9 +824,6 @@ body {
 .features-title-souvenirs {
   padding-top: 86px;
 }
-
-
-
 
 .offer {
   text-align: center;
@@ -917,7 +875,6 @@ body {
   margin-right: 16px;
 }
 
-
 .filter-list {
   margin: 0px;
   padding: 0;
@@ -937,7 +894,6 @@ body {
   word-break: break-word;
   position: relative;
 }
-
 
 label {
   cursor: pointer;
@@ -967,7 +923,7 @@ label {
 
 .check-icon:disabled ~ label,
 .check-icon:disabled ~ label:before {
-  fill: #6b6567; /* ???? */
+  fill: #6b6567;
   pointer-events: none;
 }
 
@@ -1238,14 +1194,11 @@ label {
 
 4) спросить про вертикал алигн в доп критерии д8
 
+5) как сафари?
+
 
 
 б12
-
-опера
-не загружается промо
-
-
 
 
 перед отправлением 100500 раз проверить отступы и пробелы
