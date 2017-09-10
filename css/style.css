@@ -379,8 +379,8 @@ position: relative;
 
 .search-modal-show {
   display: block;
-  animation: slide .4s;
   -webkit-animation: slide .4s;
+          animation: slide .4s;
   -webkit-transition: ease-out;
   -o-transition: ease-out;
   transition: ease-out;
