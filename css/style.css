@@ -8,7 +8,6 @@ body {
   font-family: "Pt Sans", "arial", sans-serif;
   text-transform: uppercase;
   background-color: #f2f2f2;
-  word-break: break-all;
 }
 
 html,
@@ -25,8 +24,10 @@ a {
   width: 1200px;
   margin: 0 auto;
   background-color: #fff;
-  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
-  box-sizing: border-box;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .main-nav-list {
@@ -34,8 +35,12 @@ a {
   line-height: 26px;
   list-style: none;
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0 6%;
 }
@@ -79,7 +84,9 @@ a {
 .logo {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 1;
 }
 
@@ -92,7 +99,8 @@ a {
   height: 508px;
   text-align: center;
   position: relative;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .promo img {
@@ -130,8 +138,11 @@ a {
 }
 
 .features {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .features-item {
@@ -176,7 +187,9 @@ position: relative;
   background-image: url("../svg-sedona/house.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .features-title-food {
@@ -210,7 +223,9 @@ position: relative;
   background-image: url("../svg-sedona/souvenirs.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .features-item-light .features-title,
@@ -364,11 +379,17 @@ position: relative;
 
 .search-modal-show {
   display: block;
+  animation: slide .4s;
+  -webkit-animation: slide .4s;
+  -webkit-transition: ease-out;
+  -o-transition: ease-out;
+  transition: ease-out;
 }
 
 .shadow-form {
   background-color: #fff;
-  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .date-arrival label {
@@ -376,6 +397,7 @@ position: relative;
   font-weight: 700;
   font-size: 14px;
   line-height: 26px;
+  cursor: pointer;
 }
 
 .date input {
@@ -403,6 +425,7 @@ position: relative;
   font-weight: 700;
   font-size: 14px;
   line-height: 26px;
+  cursor: pointer;
 }
 
 .icon-calendar {
@@ -425,11 +448,17 @@ position: relative;
 }
 
 .counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .person-counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-weight: 700;
   font-size: 14px;
@@ -448,6 +477,7 @@ position: relative;
 .person-counter label {
   margin-top: 9px;
   margin-left: 3px;
+  cursor: pointer;
 }
 
 .person-counter button {
@@ -462,6 +492,8 @@ position: relative;
 
 .guest-range {
   outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 114px;
 }
@@ -473,6 +505,8 @@ position: relative;
   text-align: center;
   background-color: #f2f2f2;
   border: none;
+  font-family: "Pt Sans", "arial", sans-serif;
+
 }
 
 .btn-search {
@@ -502,11 +536,15 @@ position: relative;
 
 .date-arrival {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .date-departure {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -514,7 +552,8 @@ position: relative;
   width: 60px;
   text-align: right;
   margin-right: 27px;
-  word-break: break-all;
+  -ms-word-break: break-all;
+      word-break: break-all;
 }
 
 .adult {
@@ -590,9 +629,14 @@ position: relative;
 }
 
 .social  ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
   padding: 0 7px;
   list-style: none;
@@ -603,9 +647,15 @@ position: relative;
   width: 46px;
   height: 48px;
   font-size: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .social .social-btn:hover {
@@ -632,13 +682,14 @@ position: relative;
 
 .copyright p {
   display: inline-block;
-  margin-right: 9px;
+  margin-right: 7px;
   vertical-align: middle;
 }
 
 .copyright .btn {
   display: inline-block;
   vertical-align: middle;
+  margin-top: 5px;
 }
 
 .copyright .btn:hover path {
@@ -656,9 +707,15 @@ position: relative;
 
 .hotel-filter {
   background: url(../img/catalog-bg.jpg) no-repeat 0px -55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding:0 6%;
   background-color: #406c90;
+}
+
+.hotel-filter label {
+  cursor: pointer;
 }
 
 .hotel-filter-title,
@@ -694,10 +751,12 @@ position: relative;
 
 .hotel-labels-link:focus {
   color: #000000;
+  border-color: transparent;
 }
 
 .hotel-labels .current {
   color: #a8bfcf;
+  border-color: transparent;
 }
 
 .hotel-filter-group {
@@ -727,10 +786,6 @@ position: relative;
   margin-bottom: 25px;
   word-break: break-word;
   position: relative;
-}
-
-label {
-  cursor: pointer;
 }
 
 .check-icon+label:before {
@@ -794,7 +849,9 @@ label {
   width: 2px;
   height: 22px;
   background: #ffffff;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .price-controls label {
@@ -816,6 +873,7 @@ label {
   margin: 0;
   color: inherit;
   font: inherit;
+  line-height: 21px;
   background: none;
   border: none;
 }
@@ -844,7 +902,8 @@ label {
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
@@ -881,8 +940,11 @@ label {
 }
 
 .found {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap:  wrap;
+  -ms-flex-wrap:  wrap;
+      flex-wrap:  wrap;
   padding: 28px 6% 26px 6%;
   border-bottom: 1px solid #e5e5e5;
  }
@@ -1012,6 +1074,8 @@ label {
 }
 
 .result-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 18px;
   padding: 0 6%;
@@ -1027,6 +1091,8 @@ label {
 }
 
 .result-item-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 0;
 }
@@ -1079,6 +1145,8 @@ label {
 .footer-wrapper {
   position: absolute;
   bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   margin: 16px auto;
@@ -1089,9 +1157,35 @@ label {
 
 .footer-wrapper-catalog {
   bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.9);
   padding: 35px 0px;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
