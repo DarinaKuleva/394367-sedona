@@ -8,7 +8,7 @@
     <title>HTML Academy: Выбор отелей</title>
   </head>
   <body>
-    <div class="page-wrapper">
+  <div class="page-wrapper">
     <header class="page-header">
       <nav class="main-nav">
         <a class="logo" href="index.html">
@@ -223,7 +223,14 @@
           </svg>
         </a>
       </div>
-      </section>
     </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $.pixlayout({clip: true, src: "sedona-hotels-1200.jpg", show:true, center:true, top:0, left:0, pervious: false});
+});
+</script>
   </body>
 </html>

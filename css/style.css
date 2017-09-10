@@ -1,11 +1,11 @@
-body{
+body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
-  font-family: 'Pt Sans', 'arial', sans-serif;
+  font-family: "Pt Sans", "arial", sans-serif;
   text-transform: uppercase;
   background-color: #f2f2f2;
   word-break: break-all;
@@ -164,7 +164,7 @@ position: relative;
 }
 
 .features-area p {
-padding: 0 33px;
+  padding: 0 33px;
 }
 
 .features-road h2 {
@@ -172,13 +172,11 @@ padding: 0 33px;
 }
 
 .features-road p {
-padding: 0 5px;
+  padding: 0 5px;
 }
 
-
-
 .features-tourist p {
-padding: 0 7px;
+  padding: 0 7px;
 }
 
 
@@ -212,7 +210,7 @@ padding: 0 7px;
 }
 
 .map {
-  background-image: url(../img/map.jpg);
+  background-image: #f4f1ec url(../img/map.jpg);
   width: 100%;
   height: 593px;
   background-position: center;
@@ -280,8 +278,13 @@ form p {
 
 .search-modal-show {
   display: block;
-  animation: slide 0.6s;
 }
+
+.shadow-form {
+  background-color: #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+}
+
 
 .date-arrival label {
   margin: 4px 0 0 4px;
@@ -548,6 +551,7 @@ fill: #72b1d2;
 .copyright p{
   display: inline-block;
   margin-right: 8px;
+  vertical-align: middle;
 }
 
 .copyright .btn {
@@ -1208,9 +1212,9 @@ label {
     bottom: 0px;
     display: flex;
     width: 100%;
-    margin: 0 auto;
+    margin: 16px auto;
     background: rgba(255, 255, 255, 0.9);
-    padding: 35px 0px;
+    padding: 36px 0px;
 
 }
 
@@ -1224,16 +1228,31 @@ label {
 }
 
 /*
+1)нужно ли чтобы кнопки куда то переходили после
+
+и при блокеровке разобраться
+
+2)заголовки по результатам не сильно ли выезжают (podyj 5 gbrctktq)
+
+3)мало туристов. как сделать без br
+
+4) спросить про вертикал алигн в доп критерии д8
 
 
 
-нужно ли чтобы кнопки куда то переходили после
+б12
 
-плюс минус
+опера
+не загружается промо
 
-круглишочки в каталоге???
 
-черточки  у to the скорее всего через svg
 
-заголовки по результатам не сильно ли выезжают (podyj 5 gbrctktq)
+
+перед отправлением 100500 раз проверить отступы и пробелы
+
+если успеваю то проверить азмеры картинок в src="img д1, д4
+
+остановилась на д10 включительно
+
+б11 перепроверить
 */
