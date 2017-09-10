@@ -271,6 +271,11 @@ position: relative;
   outline: none;
   border: #f2f2f2 2px solid;
   background-color: #f2f2f2;
+  font-family: "Pt Sans", "arial", sans-serif;
+}
+
+.date input::-ms-clear {
+    display: none;
 }
 
 .date-departure label {
@@ -537,9 +542,12 @@ position: relative;
   padding:0 6%;
 }
 
-.filter-list:disabled {
+/*.filter-list:disabled {
   background-color: #6c6867;
 }
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+*/
 
 .page-header .site-nav-list:hover {
   color: #81adc8;
@@ -643,18 +651,21 @@ position: relative;
   background-color: #ffffff;
 }
 
-.result-item-action .result-item-name {
+.result-item-name {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
   font-weight: bold;
+  margin-top: -5px;
+  margin-bottom: 5px;
+  display: block;
 }
 
-.result-item-action .result-item-name:hover {
+.result-item-name:hover {
   color: #7fadce;
 }
 
-.result-item-action .result-item-name:focus {
+.result-item-name:focus {
   color: #cbcbcb;
 }
 
@@ -792,6 +803,7 @@ body {
   margin-top: 47px;
   margin-bottom: 25px;
   text-align: center;
+  word-break: normal;
 }
 
 .features-item-light-house p {
@@ -923,7 +935,7 @@ label {
 
 .check-icon:disabled ~ label,
 .check-icon:disabled ~ label:before {
-  fill: #6b6567;
+  opacity: 0.3;
   pointer-events: none;
 }
 
@@ -1113,6 +1125,7 @@ label {
   padding-right: 17px;
   padding-left: 16px;
   padding-bottom: 4px;
+  padding-top: 2px;
 }
 
 .result-item-part {
@@ -1184,11 +1197,8 @@ label {
 }
 
 /*
-1)нужно ли чтобы кнопки куда то переходили после
 
 и при блокеровке разобраться
-
-2)заголовки по результатам не сильно ли выезжают (podyj 5 gbrctktq)
 
 3)мало туристов. как сделать без br
 
@@ -1208,4 +1218,7 @@ label {
 остановилась на д10 включительно
 
 б11 перепроверить
+д11
+д19?
+д20?
 */
