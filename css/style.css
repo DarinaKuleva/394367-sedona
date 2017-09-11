@@ -407,7 +407,7 @@ position: relative;
   margin-left: 21px;
   margin-bottom: 27px;
   padding-right: 12px;
-  padding-left: 12px;
+  padding-left: 7px;
   text-transform: uppercase;
   border: none;
   outline: none;
@@ -476,7 +476,7 @@ position: relative;
 
 .person-counter label {
   margin-top: 9px;
-  margin-left: 3px;
+  margin-left: 2px;
   cursor: pointer;
 }
 
@@ -682,7 +682,7 @@ position: relative;
 
 .copyright p {
   display: inline-block;
-  margin-right: 7px;
+  margin-right: 8px;
   vertical-align: middle;
 }
 
@@ -690,6 +690,7 @@ position: relative;
   display: inline-block;
   vertical-align: middle;
   margin-top: 5px;
+  margin-left: -2px;
 }
 
 .copyright .btn:hover path {
@@ -987,8 +988,8 @@ position: relative;
 }
 
 .activ {
-  color: #81b3d2;
-  pointer-events: none;
+  color: #85acd5;
+  border: none;
 }
 
 .arrow-up::before {
@@ -1003,6 +1004,12 @@ position: relative;
 
 .found-arrow:active {
   color: #81b3d2;
+  border-color: transparent;
+}
+
+.found-arrows .activ {
+  color: #85acd5;
+  border-color: transparent;
 }
 
 .result {
@@ -1110,7 +1117,7 @@ position: relative;
   background: url(../svg-sedona/star.svg);
   background-size: 23px 18px;
   background-repeat: repeat;
-  width: 90px;
+  width: 92px;
   height: 18px;
   margin-left: auto;
 }
@@ -1119,7 +1126,7 @@ position: relative;
   background: url(../svg-sedona/star.svg);
   background-size: 23px 18px;
   background-repeat: repeat;
-  width: 67px;
+  width: 69px;
   height: 18px;
   margin-left: auto;
 }
@@ -1128,7 +1135,7 @@ position: relative;
   background: url(../svg-sedona/star.svg);
   background-size: 23px 18px;
   background-repeat: repeat;
-  width: 43px;
+  width: 46px;
   height: 18px;
   margin-left: auto;
 }
